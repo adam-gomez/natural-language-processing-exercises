@@ -1,0 +1,1 @@
+This is the repository that will hold the Codeup natural language processing curriculum exercises.
