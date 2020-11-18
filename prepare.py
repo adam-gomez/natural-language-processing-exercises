@@ -87,9 +87,8 @@ def remove_stopwords(string, extra_words=[], exclude_words=[]):
 
     # Create a list of words from my string with stopwords removed and assign to variable.
     filtered_words = [w for w in words if w not in stopword_list]
-
-    print('Removed {} stopwords'.format(len(words) - len(filtered_words)))
-    print('---')
+    # print('Removed {} stopwords'.format(len(words) - len(filtered_words)))
+    # print('---')
 
     # Join words in the list back into strings and assign to a variable.
     string_without_stopwords = ' '.join(filtered_words)
