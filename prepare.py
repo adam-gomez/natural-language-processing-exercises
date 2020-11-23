@@ -69,18 +69,20 @@ def remove_stopwords(string, extra_words=[], exclude_words=[]):
 
     # If the optional list extra_words contains any strings:
     if len(extra_words) > 0:
+        print(f'The words {extra_words} have been added to the stopwords list and will not be returned.')
         for word in extra_words:
             # Append the word to the stopword_list
             stopword_list.append(word)
-        print(f'The words {extra_words} have been added to the stopwords list and will not be returned.')
+
     
     # If the optional list exclude_words contains any strings:
     if len(exclude_words) > 0:
+        print(f'The words {exclude_words} have been removed from the stopwords list and will be returned.')
         for word in exclude_words:
             if word in stopword_list:
                 # Remove the word from the stopword_list
                 stopword_list.remove(word)
-        print(f'The words {exclude_words} have been removed from the stopwords list and will be returned.')
+
     
     # Split words in string
     words = string.split()
